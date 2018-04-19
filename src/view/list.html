@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/topbar.html')  %>
+	<%= require('html-loader!./layout/header.html')  %>
+	<div class="breadcrumbs">
+		<div class="wrap">
+			<a href="./index.html" class="link">LUNAR</a>
+			<span>></span>
+			<span class="search-result">商品列表</span>
+			<span>></span>
+			<span class="search-keyword"></span>
+		</div>
+	</div>
+	<div class="list-content">
+		<div class="wrap">
+			<div class="order-list-box">
+				<ul class="order-list">
+					<li class="order-item">
+						<a href="#" class="link active order-list-suggest">推荐</a>
+					</li>
+					<li class="order-item">
+						<a href="#" class="link order-list-price">价格<i class="fa fa-long-arrow-up" id="order-icon"></i></a>
+					</li>
+					<li class="order-item">
+						<a href="#" class="link order-list-new">新品</a>
+					</li>
+					<li class="order-item">
+						<a href="#" class="link order-list-new">评论最多</a>
+					</li>
+				</ul>
+			</div>
+			<div class="product-list-box">
+				<ul class="product-list">
+					<!-- <li class="product-item">
+						<a href="#" class="p-item-content">
+							<img src="<%=require('../image/floor/floor1-2.jpg') %>" alt="" class="p-item-pic">
+							<p class="p-item-title">xxxxxxx手机USB micro 数据线</p>
+							<span class="p-item-price">￥1314</span>
+						</a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html')  %>
+</body>
+</html>

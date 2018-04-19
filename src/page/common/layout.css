@@ -1,0 +1,124 @@
+
+/*css reset*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #fff;
+	font: 12px/1.5 tahoma ,arial , Microsoft YaHei , sans-serif;
+}
+li{
+	list-style-type: none;
+}
+img{
+	display: block;
+	border: none;
+}
+label{
+	cursor: pointer;
+}
+input{
+	border: none;
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+/*chorme 浏览器记住密码后input黄色背景处理方法*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+input[type='checkbox']{
+	cursor: pointer;
+}
+button{
+	border: none;
+	outline: none;
+	background: #fff;
+}
+
+/*定宽布局*/
+.wrap{
+	width: 1230px;
+	margin: 0 auto;
+	position: relative;/*清除浮动，称开父级高度*/
+	overflow: hidden;
+}
+.panel{
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.panel .panel-title{
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+	padding: 10px;
+	overflow: hidden;
+}
+
+/*全局通用样式*/
+
+/*隐藏类*/
+.hide{
+	display: none;
+}
+
+/*超链样式*/
+.link{
+	color: #999;
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link.active{
+	color: #f56600;
+}
+.link:hover{
+	color: #f56600;
+	text-decoration: underline;
+}
+.link-text{
+	color: #e80012;
+	text-decoration: none;
+}
+
+/*btn*/
+.btn{
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: bold;
+	vertical-align: middle;
+	background: #c60023;
+	outline: none;
+	color: #fff;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+.btn-mini{
+	font-size: 12px;
+	padding: 0 10px;
+	height: 25px;
+	line-height: 25px;
+
+}
+
+/*loading*/
+.loading{
+	display: block;
+	height: 65px;
+	width: 65px;
+	margin: 10px auto;
+	opacity: .5;
+	background: url(../../image/icon/loading.gif) no-repeat;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}

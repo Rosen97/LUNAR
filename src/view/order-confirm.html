@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="header-item header-logo">
+				<a href="./index.html" class="header-logo">LUNAR</a>
+			</div>
+			<div class="header-item header-title">
+				<p>确认订单</p>
+			</div>
+			<div class="header-item header-info">
+				<a href="#" class="link header-username">tianjinkejidaxue</a>
+				<a href="#" class="link header-order">我的订单</a>
+			</div>
+		</div>
+	</div>
+	<div class="order-confirm">
+		<div class="wrap order-content">
+			<div class="section section-address">
+				<h3 class="section-title">收货地址</h3>
+				<div class="address-list">
+					<div class="address-item">
+						<dl class="user-info">
+							<dt class="user-name">王家宝</dt>
+							<dd class="user-item user-phone">17867998888</dd>
+							<dd class="user-item user-address">天津 天津市 滨海新区 </dd>
+							<dd class="user-item user-address">经济技术开发区29号天津科技大学</dd>
+							<a href="#" class="link user-action">修改</a>
+						</dl>
+					</div>
+					<div class="address-item">
+						<dl class="user-info">
+							<dt class="user-name">逍遥叹</dt>
+							<dd class="user-item user-phone">17867998888</dd>
+							<dd class="user-item user-address">天津 天津市 滨海新区 </dd>
+							<dd class="user-item user-address">经济技术开发区29号天津科技大学</dd>
+							<a href="#" class="link user-action">修改</a>
+						</dl>
+					</div>
+					<div class="address-item address-add">
+						<a href="#" class="address-new">
+							<i class="fa fa-plus-circle"></i>
+							添加新地址
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="section section-type">
+				<h3 class="section-title">配送方式</h3>
+				<a href="#" class="section-desc">快递配送(免运费)</a>
+			</div>
+			<div class="section section-body">
+				<h3 class="section-title">商品清单</h3>
+				<div class="section-con">
+					<ul class="goods-list">
+						<li class="goods-item">
+							<div class="col-img">
+								<a href="#">
+									<img src="<%= require('../image/floor/floor1-2.jpg') %>">
+								</a>
+							</div>
+							<div class="col-name">
+								<a href="#" class="link">小米Note 3 全网通版 4GB内存 亮黑色 64GB</a>
+							</div>
+							<div class="col-price">1799元</div>
+							<div class="col-count">2</div>
+							<div class="col-total">7899元</div>
+						</li>
+						<li class="goods-item">
+							<div class="col-img">
+								<a href="#">
+									<img src="<%= require('../image/floor/floor1-2.jpg') %>">
+								</a>
+							</div>
+							<div class="col-name">
+								<a href="#" class="link">小米Note 3 全网通版 4GB内存 亮黑色 64GB</a>
+							</div>
+							<div class="col-price">1799元</div>
+							<div class="col-count">2</div>
+							<div class="col-total">7899元</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section section-footer">
+				<div class="total-desc">
+					应付总额：
+					<span class="total-price">9999元</span>
+				</div>
+				<a href="#" class="order-submit">立即下单</a>
+			</div>
+		</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html')  %>
+</body>
+</html>

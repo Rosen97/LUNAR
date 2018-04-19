@@ -1,0 +1,211 @@
+.header{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	border-bottom: 2px solid #FF6700;
+}
+.header .header-item{
+	float: left;
+	height: 100px;
+}
+.header .header-logo{
+	width: 100px;
+	font-size: 30px;
+	color: #FF6700;
+	margin-right: 60px;
+}
+.header .header-title{
+	width: 500px;
+	color: #424242;
+	font-size: 28px;
+	font-weight: none;
+}
+.header .header-info{
+	float: right;
+}
+.header .header-info .link{
+    color: #757575;
+	font-size: 14px;
+}
+.header .header-info .link.header-username{
+	padding-right: 10px;
+	border-right: 1px solid #E2E0E5;
+}
+.header .header-info .link.header-order{
+	padding-left: 10px;
+}
+/*order-confirm*/
+.order-confirm{
+	background: #F5F5F5;
+	width: 100%;
+	padding: 40px 0;
+}
+.order-confirm .wrap{
+	background: #fff;
+	padding: 48px 48px 20px 48px;
+}
+.order-confirm .section .section-title{
+	font-size: 18px;
+	color: #333;
+	padding-bottom: 20px;
+	font-weight: normal;
+}
+.order-confirm .section-address .address-list{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.order-confirm .section-address .address-list .address-item{
+    width: 268px;
+    height: 178px;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+.order-confirm .section-address .address-list .address-item .user-info{
+	padding: 15px 24px 0 24px;
+}
+.order-confirm .section-address .address-list .address-item .user-info .user-item{
+	line-height: 24px;
+	color: #757575;
+	font-size: 14px;
+}
+.order-confirm .section-address .address-list .address-item .user-info .user-name{
+	font-size: 18px;
+	color: #333;
+	padding-bottom: 14px;
+}
+.order-confirm .section-address .address-list .address-item .user-info .user-action{
+	margin-top: 15px;
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	color: #FF6700;
+}
+.order-confirm .section-address .address-list .address-add .address-new{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 158px;
+	line-height: 178px;
+	padding-top: 20px;
+	color: rgb(117,117,117,.7);
+	text-align: center;
+	font-size: 14px;
+}
+.order-confirm .section-address .address-list .address-add .address-new:hover{
+	color: rgb(117,117,117,1);
+}
+.order-confirm .section-address .address-list .address-add .address-new .fa{
+	position: absolute;
+	left: 119px;
+	top: 60px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+}
+.order-confirm .section-type{
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 20px;
+}
+.order-confirm .section-type .section-title{
+    width: 150px;
+    height: 100%;
+    float: left;
+}
+.order-confirm .section-type .section-desc{
+	color: #FF6700;
+	font-size: 14px;
+	line-height: 26px;
+}
+.order-confirm .section-body{
+	width: 100%;
+}
+.order-confirm .section-body .section-title{
+	width: 100%;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.order-confirm .section-body .goods-list{
+	width: 100%;
+}
+.order-confirm .section-body .goods-list .goods-item{
+	height: 100px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.order-confirm .section-body .goods-list .goods-item .col-img{
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+	float: left;
+	margin-right: 20px;
+}
+.order-confirm .section-body .goods-list .goods-item .col-img img{
+	width: 100%;
+	height: 100%;
+}
+.order-confirm .section-body .goods-list .goods-item .col-name{
+	width: 600px;
+	height: 100%;
+	line-height: 100px;
+	float: left;
+}
+.order-confirm .section-body .goods-list .goods-item .col-price{
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	float: left;
+}
+.order-confirm .section-body .goods-list .goods-item .col-count{
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	float: left;
+}
+.order-confirm .section-body .goods-list .goods-item .col-total{
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	float: left;
+}
+.order-confirm .section-footer{
+	width: 100%;
+	height: 40px;
+	padding: 20px 0;
+	border-top: 1px solid #E0E0E0;
+}
+.order-confirm .section-footer .total-desc{
+	width: 200px;
+	height: 100%;
+	margin: 0 20px 0 850px;
+	line-height: 40px;
+	float: left;
+	color: #333;
+	font-size: 14px;
+}
+.order-confirm .section-footer .total-desc .total-price{
+	color: #FF6700;
+	font-size: 30px;
+}
+.order-confirm .section-footer .order-submit{
+	display: block;
+	width: 160px;
+	height: 100%;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	background: rgba(255,103,0,.9);
+}
+.order-confirm .section-footer .order-submit:hover{
+	background: rgba(255,103,0,1);
+}

@@ -1,0 +1,44 @@
+/*topbar-nav*/
+.topbar{
+	height: 40px;
+	width: 100%;
+	background: #333333;
+	color: #fff;
+}
+.topbar .link{
+	font-size: 14px;
+	line-height: 40px;
+}
+.topbar-nav .wrap{
+	height: 100%;
+}
+.topbar .topbar-info{
+	float: left;
+}
+.topbar .topbar-info .user{
+	display: none;
+}
+.topbar .topbar-info .user.not-login span{
+    padding-right: 15px;
+    font-size: 14px;
+    color: #999;
+}
+.topbar .topbar-info .link{
+	padding-right: 20px;
+}
+.topbar .topbar-nav{
+	float: right;
+}
+.topbar .topbar-nav .nav-item{
+	float: left;
+	padding: 0 14px;
+}
+.topbar .topbar-nav .nav-item.nav-cart{
+	background: #424242;
+}
+.topbar .topbar-nav .nav-cart.active{
+	background: #FF6700;
+}
+.topbar .topbar-nav .nav-cart .link.active{
+	color: #fff;
+}

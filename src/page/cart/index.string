@@ -1,0 +1,77 @@
+{{#notEmpty}}
+<div class="cart-header">
+	<div class="col col-checked">
+		{{#allChecked}}
+		<input type="checkbox" name="" class="checked all-checked" checked>
+		{{/allChecked}}
+		{{^allChecked}}
+		<input type="checkbox" name="" class="checked all-checked">
+		{{/allChecked}}
+		全选
+	</div>
+	<div class="col col-img"></div>
+	<div class="col col-name">商品名称</div>
+	<div class="col col-price">单价</div>
+	<div class="col col-num">数量</div>
+	<div class="col col-total">小计</div>
+	<div class="col col-action">操作</div>
+</div>
+<div class="cart-table">
+	<!-- 循环返回的cartProductVoList数组 -->
+	{{#cartProductVoList}}
+	<!-- data-product-id用来对每行商品进行操作，选中或删除 -->
+	<div class="cart-cell" data-product-id="{{productId}}">
+		<div class="col col-checked">
+			{{#productChecked}}
+			<input type="checkbox" name="" class="checked product-checked" checked>
+			{{/productChecked}}
+			{{^productChecked}}
+			<input type="checkbox" name="" class="checked product-checked">
+			{{/productChecked}}
+		</div>
+		<div class="col col-img">
+			<a href="">
+				<img src="{{imageHost}}{{productMainImage}}" class="">
+			</a>
+		</div>
+		<div class="col col-name">
+			<a href="" class="subtitle">{{productName}}</a>
+		</div>
+		<div class="col col-price">{{productPrice}}元</div>
+		<div class="col col-num">
+			<div class="col-num-change">
+				<a href="#" class="link num-minus">
+					<i class="fa fa-minus"></i>
+				</a>
+				<input type="text" name="" class="num-text" value="{{quantity}}" data-max="{{productStock}}">
+				<a href="#" class="link num-plus">
+					<i class="fa fa-plus"></i>
+				</a>
+			</div>
+		</div>
+		<div class="col col-total">{{productTotalPrice}}元</div>
+		<div class="col col-action">
+			<i class="delete-product fa fa-times"></i>
+			<!-- <i class="fa fa-times-circle" style="color: red;"></i> -->
+		</div>
+	</div>
+	{{/cartProductVoList}}	
+</div>
+<div class="cart-footer">
+	<div class="footer-left">
+		<a href="./list.html?keyword=i" class="keep-shopping">继续购物</a>
+		<span class="select-info">共
+			<i class="num total-num">xx</i>件商品，已选择<i class="num select-num">xx</i>件
+		</span>
+	</div>
+	<div class="all-total">
+		合计:<span class="total-price">
+			{{cartTotalPrice}}
+		</span>元
+	</div>
+	<a href="#" class="cart-submit">去结算</a>
+</div>
+{{/notEmpty}}
+{{^notEmpty}}
+<div>购物车为空！</div>
+{{/notEmpty}}

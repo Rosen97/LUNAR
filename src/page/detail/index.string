@@ -1,0 +1,61 @@
+<div class="intro-wrap">
+	<div class="wrap">
+        <div class="intro-pic-con">
+        	<div class="intro-mainPic">
+        		<img src="{{imageHost}}{{mainImage}}" class="mainPic" alt="{{name}}">
+        	</div>
+        	<ul class="intro-picList">
+        		{{#subImages}}
+        		<li class="intro-picItem">
+        			<img src="{{imageHost}}{{.}}" class="picItem" alt="{{name}}">
+        		</li>
+        		{{/subImages}}
+        	</ul>
+        </div>
+        <div class="intro-info-con">
+        	<h1 class="p-name">{{name}}</h1>
+        	<p class="p-subtitle">{{subtitle}}</p>
+            <div class="p-item p-price">
+               <span class="label">价格：</span>
+               <span class="price">￥{{price}}</span>
+            </div>
+            <div class="p-item p-count">
+            	<span class="label">库存：</span>
+            	<span class="count">{{stock}}</span>
+            </div>
+            <div class="p-item p-cart">
+            	<a href="#" class="cart-add">
+                   <i class="fa fa-cart-plus"></i> 
+            	   加入到购物车
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+		
+<div class="intro-detail">
+	<div class="wrap">
+		<ul class="intro-detail-list">
+    		<li class="intro-detail-item">
+    			<a href="#" class="detail-desc active">商品详情</a>
+    		</li>
+    		<li class="intro-detail-item">
+    			<a href="#" class="detail-desc">评价晒单</a>
+    		</li>
+    		<li class="intro-detail-item">
+    			<a href="#" class="detail-desc comment">商品评论</a>
+    		</li>
+    	</ul>
+	</div>
+</div>
+<div class="desc-box">
+	<div class="wrap">
+		<div class="desc-title">
+		    <div class="border-line"></div>
+            <h2 class="title-name">详情描述</h2>
+    	</div>
+    	<div class="desc-content">
+    		{{{ detail }}}
+    	</div>
+	</div>
+</div>

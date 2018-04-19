@@ -1,3 +1,2 @@
-# LUNAR
-E-commerce website based on Webpack and CommonJS
-1222
+# happymmall-fe
+happymmall

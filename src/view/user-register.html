@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+    <div class="page-wrap">
+        <div class="user-con">
+            <div class="user-title">用户注册</div>
+            <div class="user-box">
+                <div class="user-item">
+                    <input type="text" class="user-content username" placeholder="请输入用户名">
+                </div>
+                <div class="error-item">
+                    <div class="error-content">
+                        <i class="fa fa-exclamation-circle"></i>
+                        <p class="error-msg">1232222</p>
+                    </div>
+                </div>
+                <div class="user-item">
+                    <input type="password" class="user-content password" placeholder="请输入密码">
+                </div>
+                <div class="error-item">
+                    <div class="error-content">
+                        <i class="fa fa-exclamation-circle"></i>
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="user-item">
+                    <input type="text" class="user-content phone" placeholder="请输入手机号">
+                </div>
+                <div class="error-item">
+                    <div class="error-content">
+                        <i class="fa fa-exclamation-circle"></i>
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="user-item confirm">
+                    <input type="text" class="user-content confirm-code" placeholder="验证码">
+                    <input type="button" class="confirm-pic" id="code">
+                </div>
+                <div class="error-item">
+                    <div class="error-content">
+                        <i class="fa fa-exclamation-circle"></i>
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="user-item">
+                    <a href="#" class="btn-submit" id="submit">立即去注册</a>
+                </div>
+                <div class="link-item">
+                    <a href="./user-login.html" class="link">已有账号，去登陆>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= require('html-loader!./layout/footer.html')  %>
+</body>
+</html>
+
+
