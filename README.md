@@ -13,10 +13,3 @@ npm run dev_win
 ========================================
 在浏览器内输入：http://localhost:3000/dist/view/index.html进入项目首页
 ![image](https://github.com/Rosen97/myImg/blob/master/b.gif)
-![image](https://github.com/Rosen97/myImg/blob/master/1.png)
-![image](https://github.com/Rosen97/myImg/blob/master/6.png)
-![image](https://github.com/Rosen97/myImg/blob/master/3.png)
-![image](https://github.com/Rosen97/myImg/blob/master/4.png)
-![image](https://github.com/Rosen97/myImg/blob/master/5.png)
-![image](https://github.com/Rosen97/myImg/blob/master/2.png)
-![image](https://github.com/Rosen97/myImg/blob/master/7.png)
