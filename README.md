@@ -1,4 +1,4 @@
-# SHIRT-衬衫 - 电商平台 (学习使用)
+# LUNAR - 电商平台 (学习使用)
 
 
 ---
@@ -61,19 +61,19 @@
     下载地址 : https://nodejs.org/download/release/v4.4.7/
 
 * 全局安装webpack v^1.15.0
-    命令: (sudo) npm install -g webpack@^1.15.0
+    命令: npm install -g webpack@^1.15.0
 
 * 全局安装webpack-dev-server v^1.16.5
-    命令: (sudo) npm install -g webpack-dev-server@^1.16.5
+    命令: npm install -g webpack-dev-server@^1.16.5
 
 * 在项目根目录执行npm初始化
     命令: npm install (--registry=https://registry.npm.taobao.org)
 
 * 启动项目
-    开发模式: npm run dev (windows系统上为npm run dev_win)
-    生产模式: npm run dist (windows系统上为npm run dist_win)
+    开发模式: npm run dev_win
+    生产模式: npm run dist_win
 
 * 开发模式下预览项目
-    访问：http://localhost:8088/dist/view/index.html
+    访问：http://localhost:3000/dist/view/index.html
 * 数据加载跨域预览
     使用Charles，本地抓取数据，数据链接（www.happymmall.com）
