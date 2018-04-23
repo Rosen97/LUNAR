@@ -1,15 +1,79 @@
-技术栈
-Webpack+CommonJs+jquery+css
-项目运行
-注意：由于涉及真实数据接口，这里需要配置代理进行接口访问，本人用的是charles，将后端请求代理到test.happymmall.com下（这里用的是慕课网的接口），接口配置如下图所示：
-![image](https://github.com/Rosen97/myImg/blob/master/charles.png)
-git clone https://github.com/Rosen97/LUNAR.git 
+# SHIRT-衬衫 - 电商平台 (学习使用)
 
-cd LUNAR
 
-npm install
+---
+## 项目介绍
+* 使用原生HTML/CSS/JS/JQ。 基于commonjs模块化标准，前后端完全分离，分层架构。
+* 大量使用可高复用工具类设计与封装
+* 通用模块设计与独立打包方法
+* UI设计思想
 
-npm run dev_win
-========================================
-在浏览器内输入：http://localhost:3000/dist/view/index.html进入项目首页
-![image](https://github.com/Rosen97/myImg/blob/master/b.gif)
+---
+## 项目模块介绍
+* 用户模块 ： 数据安全性处理方案，表单异步/同步，小型SPA开发
+* 商品模块 ： jQuery插件模块化改造，独立组件抽离
+* 购物车模块 ： 商品状态随时验证，模块内部方法调用
+* 订单模块 ： 城市级联操作。表单回填
+* 支付模块 ： 支付动态监测，成功回填处理，支付宝对接
+
+---
+## 工具使用
+* webpack 
+* npm nodejs 
+* Charles
+* Git
+
+---
+
+## 演示
+
+---
+
+
+## 功能特性
+
+1. 首页
+2. 商品详情
+3. 商品列表
+4. 搜索商品
+5. 登录/登出
+6. 注册
+7. 找回密码
+8. 修改密码
+9. 更新个人信息
+10. 加购物车
+11. 删减购物车
+12. 购物车数量
+13. 购物车提交
+14. 地址管理
+15. 支付详情
+16. 支付扫码
+17. 订单管理
+18. 订单提交
+19. 订单验证
+
+
+---
+
+## 项目初始化步骤
+
+* 安装nodejs环境,推荐使用v4.4.7
+    下载地址 : https://nodejs.org/download/release/v4.4.7/
+
+* 全局安装webpack v^1.15.0
+    命令: (sudo) npm install -g webpack@^1.15.0
+
+* 全局安装webpack-dev-server v^1.16.5
+    命令: (sudo) npm install -g webpack-dev-server@^1.16.5
+
+* 在项目根目录执行npm初始化
+    命令: npm install (--registry=https://registry.npm.taobao.org)
+
+* 启动项目
+    开发模式: npm run dev (windows系统上为npm run dev_win)
+    生产模式: npm run dist (windows系统上为npm run dist_win)
+
+* 开发模式下预览项目
+    访问：http://localhost:8088/dist/view/index.html
+* 数据加载跨域预览
+    使用Charles，本地抓取数据，数据链接（www.happymmall.com）
