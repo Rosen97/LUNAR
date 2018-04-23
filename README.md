@@ -76,4 +76,4 @@
 * 开发模式下预览项目
     访问：http://localhost:3000/dist/view/index.html
 * 数据加载跨域预览
-    使用Charles，本地抓取数据，数据链接（www.happymmall.com）
+    使用Charles，本地抓取数据，数据链接（test.happymmall.com）
