@@ -28,7 +28,10 @@
 ## 演示
 
 ---
-
+[![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu1.gif)
+[![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu2.gif)
+[![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu3.gif)
+[![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu4.gif)
 
 ## 功能特性
 
