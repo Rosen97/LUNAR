@@ -1,0 +1,27 @@
+<div class="modal-wrap wrap" data-id={{id}}>
+	<div class="modal-header">
+		<span class="title">添加收货地址</span>
+		<a class="close fa fa-close"></a>
+	</div>
+	<div class="modal-body">
+		<div class="modal-item">
+			<input type="text" name="" class="modal-name modal-text" placeholder="姓名"" value="{{receiverName}}">
+			<input type="text" name="" class="modal-phone modal-text" placeholder="手机号" value="{{receiverPhone}}">
+		</div>
+		<div class="modal-item">
+			<input type="text" name="" class="modal-province modal-text" placeholder="所在省份" value="{{receiverProvince}}">
+			<input type="text" name="" class="modal-city modal-text" placeholder="所在城市" value="{{receiverCity}}">
+		</div>
+		<div class="modal-item">
+			<textarea rows="2" class=" modal-address modal-text" placeholder="详细地址">{{receiverAddress}}</textarea>
+		</div>
+		<div class="modal-item">
+			<input type="text" name="" class="modal-zipcode modal-text" placeholder="邮政编码" value="{{receiverZip}}">
+			<input type="text" name="" class=" modal-text" placeholder="地址标签">
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="address-btn save">保存</a>
+		<a href="#" class="address-btn cancel">取消</a>
+	</div>
+</div>

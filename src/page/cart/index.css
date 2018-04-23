@@ -194,3 +194,16 @@
 .cart-wrap .cart-submit:hover{
 	background: rgb(255,103,0,1);
 }
+
+.error{
+	width: 100%;
+	height: 120px;
+	line-height: 120px;
+	font-size: 26px;
+	color: #FF6700;
+	text-align: center;
+	background: #fff
+}
+.error a:hover{
+    text-decoration: underline;
+}

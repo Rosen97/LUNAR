@@ -1,0 +1,112 @@
+.breadcrumbs{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #e8e8e8;
+	font-size: 16px;
+	color: #999;
+}
+.breadcrumbs .wrap .link{
+	font-size: 16px;
+}
+.breadcrumbs .wrap span{
+	padding: 0 2px;
+}
+
+/*olist-content*/
+.list-content{
+	width: 100%;
+	background: #F6F6F6;
+	padding-bottom: 40px;
+}
+.user-box{
+	padding-top: 10px;
+}
+.navside{
+	width: 130px;
+	padding-top: 10px;
+	float: left;
+}
+.navside .navside-item a{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #777;
+	cursor: pointer;
+}
+.navside .navside-item a.active,
+.navside .navside-item a:hover{
+	color: #FF6700;
+}
+.panel{
+	width: 950px;
+    overflow: hidden;
+	float: left;
+}
+.panel .order-list .order-header{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #666;
+	background: #eee;
+}
+.panel .order-list .order-cell{
+	height: 100%;
+	text-align: center;
+	float: left;
+}
+.panel .order-list .order-cell.order-pic,
+.panel .order-list .order-cell.order-price,
+.panel .order-list .order-cell.order-count,
+.panel .order-list .order-cell.order-total{
+	width: 15%;
+}
+.panel .order-list .order-cell.order-name{
+	width: 40%;
+	text-align: left;
+}
+.panel .order-list .order-con{
+	margin-top: 20px;
+	width: 100%;
+	background: #FAFAFA;
+}
+.panel .order-list .order-con .order-subtitle{
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 13px;
+	color: #666;
+	background: #eee;
+}
+.panel .order-list .order-con .order-subtitle span{
+	padding-right: 20px;
+}
+.panel .order-list .order-con .order-subtitle .detail{
+	padding-left: 190px;
+}
+.panel .order-list .order-con .order-item{
+	height: 100px;
+	overflow: hidden;
+	border-bottom: 1px solid #EEE;
+}
+.panel .order-list .order-con .order-cell{
+	text-align: center;
+	float: left;
+	color: #333;
+	line-height: 100px;
+    font-size: 14px;
+}
+.panel .order-list .order-con .order-pic img{
+    width: 80px;
+    height: 80px;
+    margin: 10px 30px;
+}
+.panel .order-list .order-con .order-cell.order-name{
+	text-align: left;
+	color: #333;
+}
+.panel .order-list .order-con .order-cell.order-name .link{
+	color: #333;
+}

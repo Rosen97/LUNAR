@@ -1,0 +1,24 @@
+
+<h3 class="section-title">收货地址</h3>
+<div class="address-list">
+	{{#list}}
+	<div class="address-item" data-address-id="{{id}}" style="position: relative;">
+		<dl class="user-info">
+			<dt class="user-name">{{receiverName}}</dt>
+			<dd class="user-item user-phone">{{receiverPhone}}</dd>
+			<dd class="user-item user-address">{{receiverProvince}}&nbsp;{{receiverCity}}</dd>
+			<dd class="user-item user-address">{{receiverAddress}}</dd>
+			<div class="action">
+				<a class="link user-action delete">删除</a>
+			    <a class="link user-action edit">修改</a>
+			</div>
+		</dl>
+	</div>
+	{{/list}}
+	<div class="address-add" data-address-id="0">
+		<a href="#" class="address-new">
+			<i class="fa fa-plus-circle"></i>
+			添加新地址
+		</a>
+	</div>
+</div>

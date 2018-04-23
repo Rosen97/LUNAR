@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/topbar.html')  %>
+	<%= require('html-loader!./layout/header.html')  %>
+	<div class="breadcrumbs">
+		<div class="wrap">
+			<a href="./index.html" class="link">LUNAR</a>
+			<span>></span>
+			<span class="search-result">我的订单</span>
+		</div>
+	</div>
+	<div class="list-content">
+		<div class="user-box wrap">
+			<div class="navside">
+				<ul class="navside-list">
+					<li class="navside-item"><a href="./user-center.html">个人中心</li>
+					<li class="navside-item"><a class="active" href="./order-list.html">我的订单</li>
+					<li class="navside-item"><a href="./password-update.html">修改密码</li>
+				</ul>
+			</div>
+            <div class="panel">
+            	<h4 class="panel-title">我的订单</h4>
+            	<div class="panel-body">
+            		<div class="order-list">
+            			
+            		</div>
+            	</div>
+            </div>
+		</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html')  %>
+</body>
+</html>
