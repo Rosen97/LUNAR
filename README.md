@@ -1,4 +1,4 @@
-﻿# LUNAR - 电商平台 (学习使用)1
+﻿# LUNAR - 电商平台 (学习使用)
 
 
 ---
@@ -10,11 +10,10 @@
 
 ---
 ## 项目模块介绍
-* 用户模块 ： 数据安全性处理方案，表单异步/同步，小型SPA开发
-* 商品模块 ： jQuery插件模块化改造，独立组件抽离
-* 购物车模块 ： 商品状态随时验证，模块内部方法调用
-* 订单模块 ： 城市级联操作。表单回填
-* 支付模块 ： 支付动态监测，成功回填处理，支付宝对接
+* 用户模块 ： 数据安全性处理方案，表单异步/同步，实现用户的登录，登出，个人信息的修改。
+* 商品模块 ： jQuery插件模块化改造，独立组件抽离。
+* 购物车模块 ： 商品状态随时验证，模块内部方法调用。
+* 订单模块 ： 表单回填，实现地址的增删改操作。
 
 ---
 ## 工具使用
@@ -28,10 +27,10 @@
 ## 演示
 
 ---
-[![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu1.gif)
-[![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu2.gif)
-[![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu3.gif)
-[![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu4.gif)
+![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu1.gif)
+![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu2.gif)
+![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu3.gif)
+![wbvF0.gif](https://github.com/Rosen97/gallery/blob/master/lu4.gif)
 
 ## 功能特性
 
@@ -41,19 +40,15 @@
 4. 搜索商品
 5. 登录/登出
 6. 注册
-7. 找回密码
-8. 修改密码
-9. 更新个人信息
-10. 加购物车
-11. 删减购物车
-12. 购物车数量
-13. 购物车提交
-14. 地址管理
-15. 支付详情
-16. 支付扫码
-17. 订单管理
-18. 订单提交
-19. 订单验证
+7. 修改密码
+8. 加购物车
+9. 删减购物车
+10. 购物车数量
+11. 购物车提交
+12. 地址管理
+13. 订单管理
+14. 订单提交
+15. 订单验证
 
 
 ---
@@ -71,10 +66,6 @@
 
 * 在项目根目录执行npm初始化
     命令: npm install (--registry=https://registry.npm.taobao.org)
-
-* 启动项目
-    开发模式: npm run dev_win
-    生产模式: npm run dist_win
 
 * 开发模式下预览项目
     访问：http://localhost:3000/dist/view/index.html
