@@ -73,5 +73,5 @@
 </div>
 {{/notEmpty}}
 {{^notEmpty}}
-<div class="error">购物车空空如也！<a href="./index.html">立即去购物</a></div>
+<div class="show-error">你的购物车空空如也！<a href="./index.html">立即去购物</a></div>
 {{/notEmpty}}

@@ -1,0 +1,27 @@
+<h3 class="section-title">商品清单</h3>
+<div class="section-con">
+	<ul class="goods-list">
+		{{#orderItemVoList}}
+		<li class="goods-item">
+			<div class="col-img">
+				<a href="#">
+					<img src="{{imageHost}}{{productImage}}">
+				</a>
+			</div>
+			<div class="col-name">
+				<a href="#" class="link">{{productName}}</a>
+			</div>
+			<div class="col-price">{{currentUnitPrice}}</div>
+			<div class="col-count">{{quantity}}</div>
+			<div class="col-total">{{totalPrice}}</div>
+		</li>
+		{{/orderItemVoList}}
+	</ul>
+</div>
+<div class="section-footer">
+	<div class="total-desc">
+		应付总额：
+		<span class="total-price">{{productTotalPrice}}元</span>
+	</div>
+	<a class="order-submit">立即下单</a>
+</div>

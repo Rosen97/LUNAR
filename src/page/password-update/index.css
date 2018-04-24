@@ -1,96 +1,91 @@
-.breadcrumbs{
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
-	background: #e8e8e8;
-	font-size: 16px;
-	color: #999;
-}
-.breadcrumbs .wrap .link{
-	font-size: 16px;
-}
-.breadcrumbs .wrap span{
-	padding: 0 2px;
-}
-
-/*olist-content*/
-.list-content{
-	width: 100%;
+.personal-box{
 	background: #F6F6F6;
-	padding-bottom: 40px;
 }
-.user-box{
-	padding-top: 10px;
+.personal-box .bread-crumb{
+	height: 60px;
+	line-height: 60px;
+	background: #EEEEEE;
 }
-.navside{
-	width: 130px;
-	padding-top: 10px;
-	float: left;
+.personal-box .bread-crumb .link{
+	font-size: 15px;
 }
-.navside .navside-item a{
-	width: 100%;
-	height: 30px;
-	line-height: 30px;
-	font-size: 14px;
-	color: #777;
-	cursor: pointer;
+.personal-box .bread-crumb span{
+	color: #999;
+	padding: 0 2px;
+	font-size: 15px;
 }
-.navside .navside-item a.active,
-.navside .navside-item a:hover{
-	color: #FF6700;
-}
-.panel{
-	width: 950px;
-    overflow: hidden;
-	float: left;
-}
-.pass-update{
-	width: 100%;
+.personal-box .personal{
 	padding: 20px 0;
 }
-.pass-update .psw-item{
-	width: 340px;
+
+.personal .personal-con{
+	float: left;
+	width: 950px;
+	background: #fff;
+}
+.personal-con .personal-title{
+	padding: 20px 10px 10px 10px;
+	width: 930px;
+	font-size: 16px;
+	color: #666;
+	border-bottom: 1px solid #eee;
+}
+.personal-con .password-update{
+	padding: 10px;
+	width: 930px;
 	overflow: hidden;
-	margin-bottom: 10px;
 }
-.pass-update .psw-item .psw-title{
-	color: #555;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 10px;
+.personal-con .password-update .p-u-content{
+	padding: 20px 50px;
+	width: 330px;
 }
-.pass-update .psw-item .psw-text{
-	width: 310px;
+.personal-con .password-update .p-u-content .p-u-item{
+	width: 100%;
+}
+.personal-con .password-update .p-u-content .error-item{
+	display: none;
+	margin-top: 10px;
+	width: 100%;
 	height: 20px;
 	line-height: 20px;
-	text-indent: 10px;
-	padding: 10px;
-	color: #9D9D9D;
-	font-size: 14px;
-	border: 1px solid #E8E8E8;
-}
-.pass-update .psw-item .newPassword{
-	margin-bottom: 10px;
-}
-.pass-update .psw-item .psw-btn{
-	display: inline-block;
-	width: 120px;
-	height: 36px;
-	text-align: center;
-	line-height: 36px;
-	background: #FF6700;
-	color: #fff;
-	cursor: pointer;
-	margin-top: 20px;
-}
-.pass-update .error-item{
-	display: none;
-	width: 100%;
-	height: 30px;
-	line-height: 30px;
 	font-size: 14px;
 	color: #FF6700;
 }
-.pass-update .error-item .fa{
-	padding-right: 10px;
+.personal-con .password-update .p-u-content .p-u-item .p-u-title{
+	margin-top: 10px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #555;
 }
+.personal-con .password-update .p-u-content .p-u-item .p-u-text{
+	margin-top: 10px;
+	width: 310px;
+	padding: 10px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #555;
+	border: 1px solid #E8E8E8;
+}
+.personal-con .password-update .p-u-content .password-btn{
+	margin-top: 30px;
+	padding: 0 30px;
+	width: 250px;
+	height: 40px;
+}
+.personal-con .password-update .p-u-content .password-btn .password-ok{
+	display: inline-block;
+	width: 118px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #555;
+	font-size: 14px;
+	cursor: pointer;
+	color: #fff;
+	background: #FF6700;
+	border: 1px solid #FF6700;
+}
+

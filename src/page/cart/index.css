@@ -194,8 +194,8 @@
 .cart-wrap .cart-submit:hover{
 	background: rgb(255,103,0,1);
 }
-
-.error{
+/*商品显示错误信息*/
+.show-error{
 	width: 100%;
 	height: 120px;
 	line-height: 120px;
@@ -204,6 +204,6 @@
 	text-align: center;
 	background: #fff
 }
-.error a:hover{
-    text-decoration: underline;
+.show-error a{
+	text-decoration: underline;
 }

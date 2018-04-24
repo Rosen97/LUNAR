@@ -1,0 +1,11 @@
+.navside-list{
+	width: 140px;
+	float: left;
+	overflow: hidden;
+}
+.navside-list .navside-item{
+	line-height: 25px;
+}
+.navside-list .navside-item .link.active{
+	color: #FF6700;
+}

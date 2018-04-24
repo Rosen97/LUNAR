@@ -24,6 +24,7 @@
         'result' : ['./src/page/result/index.js'],
         'user-login' : ['./src/page/user-login/index.js'],//用户
         'user-register' : ['./src/page/user-register/index.js'],
+        'user-center' : ['./src/page/user-center/index.js'],
         'password-update' : ['./src/page/password-update/index.js'],
         'list' : ['./src/page/list/index.js'],//商品列表
         'detail': ['./src/page/detail/index.js'],
@@ -71,12 +72,13 @@
         new HtmlWebpackPlugin(getHtmlconfig('result', 'LUNAR-操作结果')),
     	new HtmlWebpackPlugin(getHtmlconfig('user-login', 'LUNAR-用户登陆')),
         new HtmlWebpackPlugin(getHtmlconfig('user-register', 'LUNAR-用户注册')),
+        new HtmlWebpackPlugin(getHtmlconfig('user-center', 'LUNAR-个人中心')),
         new HtmlWebpackPlugin(getHtmlconfig('password-update', 'LUNAR-更改密码')),
         new HtmlWebpackPlugin(getHtmlconfig('list', 'LUNAR-商品列表')),
         new HtmlWebpackPlugin(getHtmlconfig('detail', 'LUNAR-商品详情')),
         new HtmlWebpackPlugin(getHtmlconfig('cart', 'LUNAR-购物车')),
         new HtmlWebpackPlugin(getHtmlconfig('order-confirm', 'LUNAR-订单确认')),
-         new HtmlWebpackPlugin(getHtmlconfig('order-list', 'LUNAR-订单列表'))
+        new HtmlWebpackPlugin(getHtmlconfig('order-list', 'LUNAR-订单列表'))
     ]
  };
 

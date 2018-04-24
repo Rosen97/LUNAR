@@ -1,112 +1,103 @@
-.breadcrumbs{
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
-	background: #e8e8e8;
-	font-size: 16px;
+.personal-box{
+	background: #F6F6F6;
+}
+.personal-box .bread-crumb{
+	height: 60px;
+	line-height: 60px;
+	background: #EEEEEE;
+}
+.personal-box .bread-crumb .link{
+	font-size: 15px;
+}
+.personal-box .bread-crumb span{
 	color: #999;
-}
-.breadcrumbs .wrap .link{
-	font-size: 16px;
-}
-.breadcrumbs .wrap span{
 	padding: 0 2px;
+	font-size: 15px;
+}
+.personal-box .personal{
+	padding: 20px 0;
+}
+.personal .personal-con{
+	float: left;
+	width: 950px;
+	background: #fff;
+}
+.personal-con .personal-title{
+	padding: 20px 10px 10px 10px;
+	width: 930px;
+	font-size: 16px;
+	color: #666;
+	border-bottom: 1px solid #eee;
+}
+.personal-con .order-con{
+	padding: 10px;
+	width: 930px;
+}
+.personal-con .order-con .order-title{
+	overflow: hidden;
+}
+.personal-con .order-con .title{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	color: #999;
+	background: #EEEEEE;
+}
+.personal-con .order-con .title.order-pic{
+    width: 15%;
+}
+.personal-con .order-con .title.order-name{
+    width: 40%;
+    text-align: left;
+}
+.personal-con .order-con .title.order-price{
+    width: 15%;
+}
+.personal-con .order-con .title.order-count{
+    width: 15%;
+}
+.personal-con .order-con .title.order-total{
+    width: 15%;
 }
 
-/*olist-content*/
-.list-content{
-	width: 100%;
-	background: #F6F6F6;
-	padding-bottom: 40px;
-}
-.user-box{
-	padding-top: 10px;
-}
-.navside{
-	width: 130px;
-	padding-top: 10px;
-	float: left;
-}
-.navside .navside-item a{
-	width: 100%;
-	height: 30px;
-	line-height: 30px;
-	font-size: 14px;
-	color: #777;
-	cursor: pointer;
-}
-.navside .navside-item a.active,
-.navside .navside-item a:hover{
-	color: #FF6700;
-}
-.panel{
-	width: 950px;
-    overflow: hidden;
-	float: left;
-}
-.panel .order-list .order-header{
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	font-size: 14px;
-	color: #666;
-	background: #eee;
-}
-.panel .order-list .order-cell{
-	height: 100%;
-	text-align: center;
-	float: left;
-}
-.panel .order-list .order-cell.order-pic,
-.panel .order-list .order-cell.order-price,
-.panel .order-list .order-cell.order-count,
-.panel .order-list .order-cell.order-total{
-	width: 15%;
-}
-.panel .order-list .order-cell.order-name{
-	width: 40%;
-	text-align: left;
-}
-.panel .order-list .order-con{
+.personal-con .order-con .order-list{
 	margin-top: 20px;
-	width: 100%;
-	background: #FAFAFA;
+	overflow: hidden;
+    width: 100%;
 }
-.panel .order-list .order-con .order-subtitle{
-	padding: 0 10px;
+.personal-con .order-con .order-list .order-item{
+	overflow: hidden;
+	background: #FAFAFA;
+	margin-bottom: 20px;
+}
+.personal-con .order-con .order-list .order-item .order-item-info{
 	height: 40px;
 	line-height: 40px;
-	font-size: 13px;
-	color: #666;
-	background: #eee;
+	font-size: 14px;
+	color: #999;
+	background: #EEEEEE;
 }
-.panel .order-list .order-con .order-subtitle span{
+.personal-con .order-con .order-list .order-item .order-item-info .info-item{
 	padding-right: 20px;
 }
-.panel .order-list .order-con .order-subtitle .detail{
-	padding-left: 190px;
+.personal-con .order-con .order-list .order-item .order-item-info .info-detail{
+	padding-left: 100px;
 }
-.panel .order-list .order-con .order-item{
-	height: 100px;
-	overflow: hidden;
-	border-bottom: 1px solid #EEE;
-}
-.panel .order-list .order-con .order-cell{
-	text-align: center;
-	float: left;
-	color: #333;
+.personal-con .order-con .order-list .order-item .order-item-product{
 	line-height: 100px;
-    font-size: 14px;
+	font-size: 14px;
+	color: #999;
 }
-.panel .order-list .order-con .order-pic img{
+.personal-con .order-con .order-list .order-item .order-item-product .title{
+	height: 100px;
+	background: #FAFAFA;
+	line-height: 100px;
+}
+.personal-con .order-con .order-list .order-item .order-pic .product-pic{
     width: 80px;
     height: 80px;
-    margin: 10px 30px;
-}
-.panel .order-list .order-con .order-cell.order-name{
-	text-align: left;
-	color: #333;
-}
-.panel .order-list .order-con .order-cell.order-name .link{
-	color: #333;
+    padding: 10px 30px;
 }

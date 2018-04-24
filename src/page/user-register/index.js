@@ -4,7 +4,7 @@ var _user = require('service/user-service.js');
 var _mm   = require('util/mm.js');
 
 //用来记录输入框的状态
-var arr = [false,false,false,false];
+var arr = [false,false,false,false,true,true,false];
 var formError = {
     show: function(index,errMsg){
         $('.user-item').eq(index).addClass('active');
@@ -19,9 +19,12 @@ var formError = {
 }
 //获取输入框内值
 var formData = {
-    username: $.trim($('#username').val()),
-    password: $.trim($('#password').val()),
-    phone: $.trim($('#phone').val())
+    username: $.trim($('.username').val()),
+    password: $.trim($('.password').val()),
+    phone: $.trim($('.phone').val()),
+    email: $.trim($('.email').val()),
+    question: $.trim($('.question').val()),
+    answer: $.trim($('.answer').val())
 }
 var page = {
     init: function(){
@@ -85,14 +88,22 @@ var page = {
                     formError.hide(2);
                 }
             }
+            if($(this).hasClass('email')){
+                formData.email = $.trim($(this).val());
+                if(!/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(formData.email)){
+                    formError.show(3,"请输入正确的邮箱！");
+                }else{
+                    formError.hide(3);
+                }
+            }
             if($(this).hasClass('confirm-code')){
                 //将验证框里的验证码转化为大写 toUpperCase() toLowerCase()
                 var confirmCode = $.trim($(this).val()).toUpperCase();
                 var code = $('#code').val();
                 if(confirmCode !== code){
-                    formError.show(3,"验证码错误！");
+                    formError.show(6,"验证码错误！");
                 } else{
-                    formError.hide(3);
+                    formError.hide(6);
                 }
             }
         })
@@ -103,16 +114,20 @@ var page = {
         })
     },
     submit: function(){
+        formData.question = $('.question').val();
+        formData.answer = $('.answer').val();
         if(formData.username === '' || formData.password === '' || 
-            formData.phone === '' || $.trim($('.confirm-code').val()) === ''){
+            formData.phone === '' ||  $.trim($('.email').val()) === '' 
+            || $.trim($('.question').val()) === ''||  $.trim($('.answer').val()) === ''
+            ||  $.trim($('.confirm-code').val()) === ''){
             alert('输入框内值不得为空');
         }else{
             //当输入框全部返回true时，注册成功
-            if(arr[0] && arr[1] && arr[2] && arr[3]){
+            if(arr[0] && arr[1] && arr[2] && arr[3] && arr[6]){
                 console.log(formData);
                 _user.register(formData, function(res){
                     alert("注册成功！");
-                    window.location.href = './index.html';
+                    window.location.href = './user-login.html';
                 }, function(errMsg){
                     alert(errMsg);
                 });

@@ -57,7 +57,6 @@
 }
 .order-confirm .section-address .address-list .address-item,
 .order-confirm .section-address .address-list .address-add{
-	position: relative;
     width: 268px;
     height: 178px;
     float: left;
@@ -67,45 +66,39 @@
     border: 1px solid #e0e0e0;
 }
 .order-confirm .section-address .address-list .address-item:hover{
-	background: #F5F5F5;
+	background: #F6F6F6;
 }
-.order-confirm .section-address .address-list .address-item.active{
+.order-confirm .section-address .address-item.active{
 	border: 1px solid #FF6700;
 }
-.order-confirm .section-address .address-list .address-item .user-info{
+.order-confirm .section-address .address-item .user-info{
 	padding: 15px 24px 0 24px;
 }
-.order-confirm .section-address .address-list .address-item .user-info .user-item{
+.order-confirm .section-address .address-item .user-info .user-item{
 	line-height: 24px;
 	color: #757575;
 	font-size: 14px;
 }
-.order-confirm .section-address .address-list .address-item .user-info .action{
-	width: 100%;
-	height: 40px;
-	position: absolute;
-	bottom: 10px;
+.order-confirm .section-address .address-item .user-info .user-item.detail{
+	height: 48px;
+	overflow: hidden;
 }
-.order-confirm .section-address .address-list .address-item .user-info .user-name{
+.order-confirm .section-address .address-item .user-info .user-name{
 	font-size: 18px;
 	color: #333;
 	padding-bottom: 14px;
 }
-.order-confirm .section-address .address-list .address-item .user-info .user-action{
+.order-confirm .section-address .address-item .user-info .user-action{
 	display: none;
-	margin-top: 15px;
-	float: left;
+	width: 50px;
+	float: right;
 	text-align: right;
 	color: #FF6700;
 }
-.order-confirm .section-address .address-list .address-item .user-info .user-action.active{
+.order-confirm .section-address .address-item .user-info .user-action.active{
 	display: block;
 }
-.order-confirm .section-address .address-list .address-item .user-info .user-action.delete{
-	margin-left: 140px;
-	margin-right: 15px;
-}
-.order-confirm .section-address .address-list .address-add .address-new{
+.order-confirm .section-address .address-add .address-new{
 	position: relative;
 	display: block;
 	width: 100%;
@@ -116,10 +109,10 @@
 	text-align: center;
 	font-size: 14px;
 }
-.order-confirm .section-address .address-list .address-add .address-new:hover{
+.order-confirm .section-address .address-add .address-new:hover{
 	color: rgb(117,117,117,1);
 }
-.order-confirm .section-address .address-list .address-add .address-new .fa{
+.order-confirm .section-address .address-add .address-new .fa{
 	position: absolute;
 	left: 119px;
 	top: 60px;
@@ -204,12 +197,13 @@
 	border-top: 1px solid #E0E0E0;
 }
 .order-confirm .section-footer .total-desc{
-	width: 200px;
+	width: 300px;
 	height: 100%;
-	margin: 0 20px 0 850px;
+	margin: 0 20px 0 750px;
 	line-height: 40px;
 	float: left;
 	color: #333;
+	text-align: right;
 	font-size: 14px;
 }
 .order-confirm .section-footer .total-desc .total-price{
@@ -225,104 +219,117 @@
 	float: left;
 	font-size: 14px;
 	color: #fff;
+	cursor: pointer;
 	background: rgba(255,103,0,.9);
 }
 .order-confirm .section-footer .order-submit:hover{
 	background: rgba(255,103,0,1);
 }
 
-/*modal*/
+/*modal 遮罩层 */
 .modal{
 	display: none;
 	position: fixed;
+	top: 0;
 	left: 0;
-	top: 0;
-	top: 0;
+	right: 0;
 	bottom: 0;
-	overflow-x: hidden;
-	background: #000;
-	width: 100%;
-	height: 100%;
 	background: rgba(0,0,0,.4);
-	z-index: 1000;
 }
 .modal .modal-wrap{
-	position: absolute;
 	width: 660px;
 	height: 460px;
-	left: 50%;
+	/*垂直水平居中*/
+	position: relative;
 	top: 50%;
-	margin-left: -330px;
+	left: 50%;
 	margin-top: -230px;
+	margin-left: -330px;
 	background: #fff;
 }
 .modal .modal-wrap .modal-header{
-	padding: 14px 20px;
 	width: 620px;
 	height: 32px;
 	line-height: 32px;
 	font-size: 18px;
 	color: #424242;
-	background: #F5F5F5;
+	background: #f5f5f5;
+	padding: 14px 20px;
 }
 .modal .modal-wrap .modal-header .close{
 	display: inline-block;
 	float: right;
-	margin-top: 8px;
+	color: #757575;
 	cursor: pointer;
+	font-size: 20px;
 }
+/*modal-body*/
 .modal .modal-wrap .modal-body{
-	padding: 40px 40px 0 40px;
-	width: 590px;
+	width: 580px;
 	height: 280px;
+	padding: 40px 40px 0 40px;
 }
-.modal .modal-wrap .modal-body .modal-item{
+.modal .modal-wrap .modal-body .form-box .form-item{
+	position: relative;
 	margin-bottom: 14px;
+	float: left;
+	overflow: hidden;
 }
-.modal .modal-wrap .modal-body .modal-item .modal-text{
+.modal .modal-wrap .modal-body .form-box .form-item .form-value{
 	width: 249px;
 	height: 18px;
-	line-height: 18px;
-	font-size: 14px;
 	padding: 10px 16px;
-	color: #333;
-	border: 1px solid #E0E0E0;
+	color: #757575;
+	font-size: 14px;
+	line-height: 18px;
+	border: 1px solid #e0e0e0;
 }
-.modal .modal-wrap .modal-body .modal-item .modal-text.modal-address{
-	width: 550px;
-	height: 64px;
-	outline: none;
+.modal .modal-wrap .modal-body .form-box .form-item .fa{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	cursor: pointer;
 }
-.modal .modal-wrap .modal-body .modal-item .modal-name,
-.modal .modal-wrap .modal-body .modal-item .modal-province,
-.modal .modal-wrap .modal-body .modal-item .modal-zipcode{
+.modal .modal-wrap .modal-body .form-box .form-item.name,
+.modal .modal-wrap .modal-body .form-box .form-item.province,
+.modal .modal-wrap .modal-body .form-box .form-item.zipcode{
 	margin-right: 14px;
 }
-
-.modal-footer{
-	width: 100%;
+.modal .modal-wrap .modal-body .form-box .form-item .form-value.form-detail-address{
+	width: 546px;
+	height: 42px;
+	outline: none;
+}
+/*modal-footer*/
+.modal .modal-wrap .modal-footer{
+	width: 660px;
 	height: 40px;
 	padding: 20px 0;
-	background: #F5F5F5;
+	background: #f5f5f5;
 }
-.modal-footer .address-btn{
+.modal .modal-wrap .modal-footer .link{
 	display: inline-block;
-	width: 158px;
-	height: 38px;
-	line-height: 38px;
+	width: 160px;
+	height: 40px;
+	margin-left: 20px;
+	line-height: 40px;
 	text-align: center;
-	background: rgb(255,103,0,.9);
 	color: #fff;
+	background: rgb(255,103,0,.9);
+}
+.modal .modal-wrap .modal-footer .link.save{
 	margin-left: 150px;
 }
-.modal-footer .address-btn:hover{
+.modal .modal-wrap .modal-footer .link.cancel{
+	background: rgb(110,110,110,.8);
+}
+.modal .modal-wrap .modal-footer .link:hover{
+	text-decoration: none;
+}
+.modal .modal-wrap .modal-footer .link.save:hover{
 	background: rgb(255,103,0,1);
 }
-.modal-footer .address-btn.cancel{
-	margin-left: 20px;
-	background: rgb(176,176,176,.9);
-	color: #fff;
-}
-.modal-footer .address-btn.cancel:hover{
-	background: rgb(176,176,176,1);
+.modal .modal-wrap .modal-footer .link.cancel:hover{
+	background: rgb(110,110,110,1);
 }

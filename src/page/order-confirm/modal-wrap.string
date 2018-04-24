@@ -1,0 +1,39 @@
+<div class="modal-wrap" data-id={{id}}>
+      <div class="modal-header">
+      	  <span class="title">添加收货地址</span>
+      	  <a class="close">
+      	  	<i class="fa fa-times"></i>
+      	  </a>
+      </div>
+      <div class="modal-body">
+      	  <div class="form-box">
+      	  	   <div class="form-item name">
+      	  	   	   <input type="text" name="" class="form-value form-name" placeholder="姓名" value="{{receiverName}}">
+      	  	   </div>
+      	  	   <div class="form-item phone">
+      	  	   	   <input type="text" name="" class="form-value form-phone" placeholder="手机号" value="{{receiverMobile}}">
+      	  	   </div>
+      	  	   <div class="form-item province">
+                           <input class="form-value form-province" value="{{receiverProvince}}" placeholder="所在省份">
+                           <i class="fa fa-angle-down"></i>
+      	  	   </div>
+                     <div class="form-item city">
+                           <input class="form-value form-city" value="{{receiverCity}}" placeholder="所在城市">
+                           <i class="fa fa-angle-down"></i>
+                     </div>
+      	  	   <div class="form-item detail">
+      	  	   	   <textarea class="form-value form-detail-address" placeholder="详细地址" rows="2">{{receiverAddress}}</textarea>
+      	  	   </div>
+      	  	   <div class="form-item zipcode">
+      	  	   	   <input type="text" name="" class="form-value form-zipcode" placeholder="邮政编码" value="{{receiverZip}}">
+      	  	   </div>
+      	  	   <div class="form-item tag">
+      	  	   	   <input type="text" name="" class="form-value form-tag" placeholder="地址标签">
+      	  	   </div>
+      	  </div>
+      </div>
+      <div class="modal-footer">
+      	  <a class="link save">保存</a>
+      	  <a class="link cancel">取消</a>
+      </div>	
+</div>

@@ -1,0 +1,20 @@
+<div class="modal-item">
+	<span class="modal-item-subtitle" style="float: left;">用户名：</span>
+	<p class="modal-text" style="border: none;float: left;">{{username}}</p>
+</div>
+<div class="modal-item">
+	<span class="modal-item-subtitle">手机号</span>
+	<input type="text" name="" class="modal-text modal-phone" value="{{phone}}">
+</div>
+<div class="modal-item">
+	<span class="modal-item-subtitle">邮箱：</span>
+	<input type="text" name="" class="modal-text modal-email" value="{{email}}">
+</div>
+<div class="modal-item">
+	<span class="modal-item-subtitle">问题：</span>
+	<input type="text" name="" class="modal-text modal-question" value="{{question}}">
+</div>
+<div class="modal-item">
+	<span class="modal-item-subtitle">答案：</span>
+	<input type="text" name="" class="modal-text modal-answer" value="{{answer}}">
+</div>

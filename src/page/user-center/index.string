@@ -1,0 +1,16 @@
+<p class="user-info">
+	用户名：<span class="username">{{username}}</span>
+</p>
+<p class="user-info">
+	电&nbsp;&nbsp;&nbsp;话：<span class="phone">{{phone}}</span>
+</p>
+<p class="user-info">
+	邮&nbsp;&nbsp;&nbsp;箱：<span class="email">{{email}}</span>
+</p>
+<p class="user-info">
+	问&nbsp;&nbsp;&nbsp;题：<span class="question">{{question}}</span>
+</p>
+<p class="user-info">
+	答&nbsp;&nbsp;&nbsp;案：<span class="answer">{{answer}}</span>
+</p>
+<a class="user-center-btn">编辑</a>

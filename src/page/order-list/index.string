@@ -1,34 +1,53 @@
-<div class="order-header">
-	<div class="order-cell order-pic"></div>
-    <div class="order-cell order-name">商品信息</div>
-    <div class="order-cell order-price">单价</div>
-    <div class="order-cell order-count">数量</div>
-    <div class="order-cell order-total">合计</div>
-</div>
-{{#list}}
-<div class="order-con">
-	<div class="order-subtitle">
-		<span class="order-num">订单号：{{orderNo}}</span>
-		<span class="time">{{createTime}}</span>
-		<span class="receiver-name">收件人：{{receiverName}}</span>
-		<span class="status">订单状态：未支付</span>
-		<span class="totalPrice">订单总价：<i style="color: #FF6700">￥{{payment}}</i></span>
-		<a href="#" class="link detail">查看详情</a>
+
+<div class="order-title">
+	<div class="title order-pic">
+		
 	</div>
-    {{#orderItemVoList}}
-	<div class="order-item">
-         <div class="order-cell order-pic">
-         	<a href="#">
-         		<img src="{{imageHost}}{{productImage}}">
-         	</a>
-         </div>
-         <div class="order-cell order-name">
-         	<a href="#" class="link">{{productName}}</a>
-         </div>
-         <div class="order-cell order-price">￥{{currentUnitPrice}}</div>
-         <div class="order-cell order-count">{{quantity}}</div>
-         <div class="order-cell order-total">￥{{totalPrice}}</div>
+	<div class="title order-name">
+		<p>商品信息</p>
 	</div>
-    {{/orderItemVoList}}
+	<div class="title order-price">
+		<p>单价</p>
+	</div>
+	<div class="title order-count">
+		<p>数量</p>
+	</div>
+	<div class="title order-total">
+		<p>合计</p>
+	</div>
 </div>
-{{/list}}
+<ul class="order-list">
+	{{#list}}
+	<li class="order-item">
+		<div class="order-item-info">
+			<span class="info-item info-num">订单号：<a class="link">{{orderNo}}</a></span>
+			<span class="info-item info-time">{{createTime}}</span>
+			<span class="info-item info-name">收件人：{{receiverName}}</span>
+	        <span class="info-item info-type">订单状态：已支付</span>
+	        <span class="info-item info-price">订单总价：<i style="color: #FF6700;">￥{{payment}}</i></span>
+	        <a class="link info-detail">查看详情></a>
+		</div>
+		{{#orderItemVoList}}
+		<div class="order-item-product">
+			<div class="title order-pic">
+		        <a href="#">
+		        	<img class="product-pic" src="{{imageHost}}{{productImage}}">
+		        </a>
+			</div>
+			<div class="title order-name">
+				<a class="link">{{productName}}</a>
+			</div>
+			<div class="title order-price">
+				<p>￥{{currentUnitPrice}}</p>
+			</div>
+			<div class="title order-count">
+				<p>{{quantity}}</p>
+			</div>
+			<div class="title order-total">
+				<p>￥{{totalPrice}}</p>
+			</div>
+		</div>
+		{{/orderItemVoList}}
+	</li>
+	{{/list}}
+</ul>

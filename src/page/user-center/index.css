@@ -1,0 +1,134 @@
+.personal-box{
+	background: #F6F6F6;
+}
+.personal-box .bread-crumb{
+	height: 60px;
+	line-height: 60px;
+	background: #EEEEEE;
+}
+.personal-box .bread-crumb .link{
+	font-size: 15px;
+}
+.personal-box .bread-crumb span{
+	color: #999;
+	padding: 0 2px;
+	font-size: 15px;
+}
+.personal-box .personal{
+	padding: 20px 0;
+}
+
+.personal .personal-con{
+	float: left;
+	width: 950px;
+	background: #fff;
+}
+.personal-con .personal-title{
+	padding: 20px 10px 10px 10px;
+	width: 930px;
+	font-size: 16px;
+	color: #666;
+	border-bottom: 1px solid #eee;
+}
+.personal-con .user-center{
+	padding: 20px 10px;
+}
+.personal-con .user-center .user-info{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: 666;
+}
+.personal-con .user-center .user-info span{
+	padding-left: 20px;
+}
+.personal-con .user-center .user-center-btn{
+	margin-top: 20px;
+	display: block;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	background: #FF6700;
+	color: #fff;
+	cursor: pointer;
+}
+/*遮罩层*/
+.modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.4);
+	z-index: 100;
+}
+.modal .modal-wrap{
+	width: 660px;
+	height: 380px;
+	/*垂直水平居中*/
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -230px;
+	margin-left: -330px;
+	background: #fff;
+}
+.modal .modal-wrap .modal-title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+	padding: 10px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.modal .modal-wrap .modal-content{
+	padding: 30px 160px;
+	width: 340px;
+}
+.modal .modal-wrap .modal-content .modal-item{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 10px;
+}
+.modal .modal-wrap .modal-content .modal-item .modal-item-subtitle{
+	display: inline-block;
+	width: 80px;
+}
+.modal .modal-wrap .modal-content .modal-item .modal-text{
+	text-indent: 10px;
+	margin-left: 5px;
+	width: 240px;
+	height: 100%;
+	border: 1px solid #e0e0e0;
+}
+.modal .modal-wrap .modal-footer{
+	width: 100%;
+	height: 36px;
+	padding: 0 165px;
+	margin-top: 10px;
+}
+.modal .modal-wrap .modal-footer .link{
+	display: inline-block;
+	width: 140px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #FF6700;
+    color: #fff;
+}
+.modal .modal-wrap .modal-footer .link:hover{
+	text-decoration: none;
+}
+.modal .modal-wrap .modal-footer .link.cancel{
+	margin-left: 20px;
+	background: #6E6E6E;
+}

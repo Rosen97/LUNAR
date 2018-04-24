@@ -5,8 +5,10 @@
 .page-wrap{
     width: 100%;
     margin-bottom: 20px;
-    background: url(../../image/icon/log-reg-bg.jpg) no-repeat;
+    /*background: url(../../image/icon/log-reg-bg.jpg) no-repeat;*/
+    background: rgb(72,124,174,.8);
     padding-bottom: 40px;
+    background-size: contain;
 }
 .page-wrap .user-con{
     width: 400px;
