@@ -27,7 +27,7 @@ var page = {
 				productId: _this.data.productId,
 				count: 1   //默认提交数量为1
 			},function(res){
-				window.location.href = './result.html';
+				window.location.href = './result.html?type=add-cart';
 			},function(errMsg){
 				alert('添加失败');
 			})

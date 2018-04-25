@@ -1,6 +1,8 @@
-.success{
+.result-con{
+	display: none;
 	text-align: center;
 	margin-bottom: 60px;
+	border-top: 1px solid #e0e0e0;
 }
 .add-success{
 	padding: 10px 60px; 

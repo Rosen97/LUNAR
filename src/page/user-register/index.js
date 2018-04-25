@@ -35,14 +35,14 @@ var page = {
     createCode: function(){
         var code = "",   
             codeLength = 4,//验证码的长度   
-            checkCode = document.getElementById("code"),    
-            random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',   
-         'S','T','U','V','W','X','Y','Z');//随机数   
+            checkCode = $('#code'),    
+            random = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',   
+         'S','T','U','V','W','X','Y','Z'];//随机数   
         for(var i = 0; i < codeLength; i++) {//循环操作   
             var index = Math.floor(Math.random()*36);//取得随机数的索引（0~35）   
             code += random[index];//根据索引取得随机数加到code上   
         }   
-        checkCode.value = code;//把code值赋给验证码  
+        checkCode.val(code)//把code值赋给验证码  
     },
     bindEvent: function(){
         var _this = this;
@@ -70,11 +70,8 @@ var page = {
             }
             if($(this).hasClass('password')){
                 formData.password = $.trim($(this).val());
-                if(formData.password.length<6 || formData.password.length>18){
-                    formError.show(1,"密码长度需是8~16个字符！");
-                }
-                else if(!/^(?![^a-zA-Z]+$)(?!\D+$)/.test(formData.password)){
-                    formError.show(1,"密码需包含字母和数字！");
+                if(!/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,18}$/.test(formData.password)){
+                    formError.show(1,"密码长度为6~18位，且包含字母和数字！");
                 }
                 else{
                     formError.hide(1);
@@ -126,8 +123,7 @@ var page = {
             if(arr[0] && arr[1] && arr[2] && arr[3] && arr[6]){
                 console.log(formData);
                 _user.register(formData, function(res){
-                    alert("注册成功！");
-                    window.location.href = './user-login.html';
+                   window.location.href = './result.html?type=register';
                 }, function(errMsg){
                     alert(errMsg);
                 });
